@@ -6,10 +6,10 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
 OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
-$(NAME) : $(OBJS) Zombie.hpp
+$(NAME) : $(OBJS)
 		$(CC) $(OBJS) -o $(NAME)
 
-%.o : %.cpp
+%.o : %.cpp Zombie.hpp
 		$(CC) $(CFLAGS) -o $@ -c $<
 clean:
 		rm -f $(OBJS)

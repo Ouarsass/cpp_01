@@ -1,16 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/17 13:51:43 by mouarsas          #+#    #+#             */
+/*   Updated: 2023/01/17 16:02:33 by mouarsas         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Zombie.hpp"
+
 
 int     main()
 {
     Zombie *info;
 
-    info = zombieHorde(4, "blood");
-    if (info == NULL)
-        return 1;
-    for (int i = 0; i < 4; i++)
-    {
-        info[i].announce();
-    }
+    info = zombieHorde(14, "ZOMBIE ");
     delete[] info;
     return 0;
 }
