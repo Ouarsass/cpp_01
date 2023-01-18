@@ -6,7 +6,9 @@
         "iosfwd": "cpp",
         "fstream": "cpp",
         "iostream": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "string": "cpp",
+        "ostream": "cpp"
     },
     "C_Cpp.dimInactiveRegions": false
 }
