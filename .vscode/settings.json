@@ -8,7 +8,8 @@
         "iostream": "cpp",
         "filesystem": "cpp",
         "string": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "istream": "cpp"
     },
     "C_Cpp.dimInactiveRegions": false
 }
