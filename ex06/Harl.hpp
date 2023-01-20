@@ -5,11 +5,15 @@
 
 class Harl
 {
-private:
-    /* data */
-public:
-    Harl(/* args */);
-    ~Harl();
+    private:
+        void debug();
+        void info();
+        void warning();
+        void error();
+    public:
+        void complain(std::string level);
+        Harl();
+        ~Harl();
 };
 
 #endif

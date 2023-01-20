@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mustapha <mustapha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 16:36:38 by mouarsas          #+#    #+#             */
-/*   Updated: 2023/01/19 16:52:30 by mouarsas         ###   ########.fr       */
+/*   Updated: 2023/01/20 00:51:28 by mustapha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 
-void append_in_file(std::string s1, std::string s2, std::string line, std::string &new_line)
+void append_in_file(std::string s1, std::string s2, std::string line, std::string &string)
 {
     std::size_t i;
 
     i = line.find(s1, 0);
     if (i != 0)
-        new_line.append(line, 0, i);
-    new_line.append(s2);
+        string.append(line, 0, i);
+    string.append(s2);
     i = i + s1.size();
     line.erase(0, i);
     if (line.find(s1) == std::string::npos)
     {
-        new_line.append(line);
+        string.append(line);
         return ;
     }
     else
-        append_in_file(s1, s2, line, new_line);
+        append_in_file(s1, s2, line, string);
 }
 
 int     main(int ac, char **av)

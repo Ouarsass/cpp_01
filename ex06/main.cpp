@@ -2,6 +2,12 @@
 
 int main(int ac, char **av)
 {
+    if (ac != 2)
+    {
+        std::cout << "please type tow parametres" << std::endl;
+        return (1);
+    }
+    Harl    execut;
     std::string smg = av[1];
     int i = (smg == "DEBUG") * 1 +
             (smg == "INFO") * 2 +
@@ -11,20 +17,16 @@ int main(int ac, char **av)
     switch (i)
     {
     case 0:
-        std::cout << "function not found\n";
+        std::cout << "function not found !\n";
         break;
-
     case 1:
-        std::cout << "DEBUG function called\n";
-
+        execut.complain("DEBUG");
     case 2:
-        std::cout << "INFO function called\n";
-
+        execut.complain("INFO");
     case 3:
-        std::cout << "WARNING function called\n";
-
+        execut.complain("WARNING");
     case 4:
-        std::cout << "ERROR function called\n";
-
+        execut.complain("ERROR");
     }
+    return 0;
 }
