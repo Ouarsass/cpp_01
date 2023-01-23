@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mustapha <mustapha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 13:51:59 by mouarsas          #+#    #+#             */
-/*   Updated: 2023/01/17 15:58:34 by mouarsas         ###   ########.fr       */
+/*   Updated: 2023/01/23 17:24:12 by mustapha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 Zombie* zombieHorde(int N, std::string name)
 {
     Zombie *info;
-    std::stringstream str;
 
 	if (N < 0)
 		return (NULL);
