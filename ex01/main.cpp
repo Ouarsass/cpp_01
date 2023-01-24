@@ -6,18 +6,17 @@
 /*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 13:51:43 by mouarsas          #+#    #+#             */
-/*   Updated: 2023/01/17 16:02:33 by mouarsas         ###   ########.fr       */
+/*   Updated: 2023/01/24 20:03:21 by mouarsas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-
 int     main()
 {
     Zombie *info;
 
-    info = zombieHorde(14, "ZOMBIE ");
+    info = zombieHorde(10, "ZOMBIE ");
     delete[] info;
     return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 19:16:14 by mouarsas          #+#    #+#             */
-/*   Updated: 2023/01/20 19:16:15 by mouarsas         ###   ########.fr       */
+/*   Updated: 2023/01/24 20:06:48 by mouarsas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ void HumanB::setWeapon(Weapon &Wep)
 {
     this->weapon = &Wep;
 }
-

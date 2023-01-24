@@ -6,7 +6,7 @@
 /*   By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 18:35:30 by mouarsas          #+#    #+#             */
-/*   Updated: 2023/01/20 18:35:31 by mouarsas         ###   ########.fr       */
+/*   Updated: 2023/01/24 22:52:32 by mouarsas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int main(int ac, char **av)
             (smg == "INFO") * 2 +
             (smg == "WARNING") * 3 +
             (smg == "ERROR") * 4;
-    // std::cout << i << "\n";
     switch (i)
     {
     case 0:

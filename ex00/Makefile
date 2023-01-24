@@ -6,7 +6,7 @@
 #    By: mouarsas <mouarsas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/17 14:05:19 by mouarsas          #+#    #+#              #
-#    Updated: 2023/01/17 18:34:40 by mouarsas         ###   ########.fr        #
+#    Updated: 2023/01/24 18:25:36 by mouarsas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,5 +31,3 @@ fclean: clean
 		rm -f $(NAME)
 
 re: fclean $(NAME)
-
-.PHONY:	all clean fclean re
